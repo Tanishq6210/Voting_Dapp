@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Voting App</title>
+  <link rel="stylesheet" href="style.css">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,600;1,200;1,400;1,600&display=swap"
+    rel="stylesheet">
+</head>
+
+<body onload="getAllVotes()">
+  <div class="header">
+    <h1>Blockchain Voting App</h1>
+    <button onclick="checkWinner()">Check Winner</button>
+    <h2 id="winner"></h2>
+  </div>
+  <div class="row1-container">
+    <div class="box box-down cyan">
+        <img src="goma.jpg" width="180px" height="180px" alt="">
+        <h2>Goma</h2>
+      <p id="goma">0</p>
+      <button onclick="voteGoma()">VOTE</button>
+    </div>
+
+    <div class="box red">
+      <img src="Peach.jpg" width="180px" height="180px" alt="">
+      <h2>Peach</h2>
+      <p id="peach">0</p>
+      <button onclick="votePeach()">VOTE</button>
+    </div>
+
+    <div class="box box-down blue">
+        <img src="shinchan.jpeg" width="200px" height="200px" alt="">
+      <h2>Shinchan</h2>
+      <p id="shinchan">0</p>
+      <button onclick="voteShinchan()">VOTE</button>
+    </div>
+  </div>
+  <div class="row2-container">
+    <div class="box orange">
+        <img src="doraemon.png" width="180px" height="180px" alt="">
+      <h2>Doraemon</h2>
+      <p id="doraemon">0</p>
+      <button onclick="voteDoraemon()">VOTE</button>
+    </div>
+  </div>
+
+  <script
+          src="https://cdnjs.cloudflare.com/ajax/libs/web3/1.7.4-rc.0/web3.min.js"
+          integrity="sha512-RGPKVfQewHGfk9yaB7ThGPKAQU+civS5awsfStLg22jrWbqgDkNzPtIwNFpFApr3ccjB730SRxi+KnDjhIuTpw=="
+          crossorigin="anonymous"
+          referrerpolicy="no-referrer"
+        ></script>
+      <script src="script.js"></script>
+</body>
+
+</html>
